@@ -1,0 +1,94 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background color and text color */
+body {
+    background-color: #1a1a1a;
+    color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the input and button */
+input[type="text"], button {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Style the input box */
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #f2f2f2;
+    background-color: #1a1a1a;
+    outline: none;
+}
+
+/* Style the Add button */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Add button hover effect */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Style the todo list container */
+.todo-list {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+}
+
+/* Style individual todo items */
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Add hover effect on todo items */
+.todo-item:hover {
+    background-color: #222;
+}
+
+/* Style completed todo items */
+.todo-item.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+/* Style the delete button within each todo item */
+.todo-item .delete-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Style the delete button on hover */
+.todo-item .delete-btn:hover {
+    background-color: #d32f2f;
+}
